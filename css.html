@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> CSS KNOWLEDGE </title>
+   <meta name="View Port" content="width=device-width,initial-scale=1">
+   <meta charset="UTF-8">
+   <style>
+        * {
+        box-sizing: border-box;
+        }
+        p {
+         width:60px;
+         height:60px;
+         border:1px solid indigo;
+          float:left;
+          margin:5px;
+        }
+        footer {
+           background-color:blue;
+            color:white;
+            clear:left;
+           height :120px;
+            width: 150px;
+           overflow:auto;
+          position: relative;
+            top:-20px;
+             left:10px;
+        }
+        #p1 {
+          background-color:green;
+           position:relative;
+           top:193px;
+           left:200px;
+        }
+        #p2 {
+           background-color:yellow;
+           position:relative;
+            top:128px;
+            left:130px;
+            
+        }
+        #p3 {
+           background-color:purple;
+            clear:left;
+            position: relative;
+               top:-7px;
+               left:200px;
+               
+        }
+        #p4 {
+           background-color:violet;
+              position:relative;
+               top:-70px;
+               left:130px;
+        }
+       body {
+          background-color:indigo;
+        background-image:url("shanbulb.gif");
+        background-repeat:no-repeat;
+        background-position:top right;
+        background-size:250px;
+         overflow:auto;
+       }
+      .colored {
+       color:green;
+      }
+      #colored {
+       color:pink;
+       }
+     div,.big{
+     font-size:25px;
+      background-color:pink;
+      width:400px;
+     }
+     p.yellow {
+       color: yellow;
+       text-align: right;
+       font-size:2em;
+      }
+    section>p {
+       text-align:left;
+       color:blue;
+       font-size:25px;
+      }
+    div  p {
+       text-align:center;
+       color:violet;
+       font-size:30px;
+   }
+    .purple p {
+        color:purple;
+    }
+     article>.purple {
+          color:purple;
+    }
+      a:link,a:visited {
+        text-decoration:none;
+        text-align:center;
+        text-transform:uppercase;
+          color:yellow;
+          background-color:orange;
+          margin:0px;
+           width:150px;
+          border:2px solid black;
+           display:block;
+      }
+        a:hover,a:active {
+            color:red;
+         background-color:blue;
+      }
+
+     #box {
+       color:green;
+       background-color:pink;
+      margin-left:15px;
+       border:2px solid blue;
+       padding:3px;
+      width:400px;
+      height:50px;
+      overflow:scroll;
+    }
+    #content {
+      color:orange;
+      background-color:yellow;
+     }
+    
+   </style>
+</head>
+<body>
+  <span style="text-align:right;">
+    <ul style="text-align:right;">
+     <li style="text-align:right;"> <a href="/" target="_blank"> Home </a> </li>
+     <li style="text-align:right;"> <a href="https://www.google.com" target="_blank"> Google </a> </li>
+     <li style="text-align:right;"> <a href="https://www.bing.com" target="_blank"> Bing </a> </li>
+      <li style="text-align:right;"> <a href="https://www.ask.com" target="_blank"> Ask </a> </li>
+    </ul>
+ </span>  
+   <h2 style="text-align:center;"> INTRODUCTION TO CSS </h2>
+   <div> CSS stands for cascading style sheet.</div>
+   <h3 style="text-align:center;"> Anatomy of CSS </h3>
+      <span><em> CSS versions are: </em> </span>
+    <ol>
+       <li> CSS 1 </li>
+       <li> CSS 2 </li>
+       <li> CSS 3 </li>
+    </ol> 
+  <div><strong>  p { 
+         color: blue;
+       }
+   </strong> </div> <br><br>
+      here p is called <em>Selector</em>.<br>
+        color is called <em>Property</em>.<br>        
+        blue is called <em>Value</em>.<br>
+        total (color: blue) is called <em>Declaration</em>.
+  <h4 style="text-align:center;"> Selectors </h4>
+     <ul>
+       <li> Element Selector </li><br>
+       <u> EXAMPLE</u>:<br>
+          <span> p {
+                 font-size:25px;
+                }
+          </span>
+          here p is element selector.<br><br>
+       <li> Class Selector </li>
+          <p class="colored"> class selector denoted with period(.).</p><br><br><br><br><br><br><br
+          <u> EXAMPLE</u>:<br>
+          <span> .big {
+                 font-size:25px;
+                }
+          </span>
+          here .big is class selector.<br><br>
+       <li> ID Selector </li>
+          <p id="colored"> ID selector denoted with #.</p><br><br><br><br><br>
+          <u> EXAMPLE</u>:<br>
+          <span> #big {
+                 font-size:25px;
+                }
+          </span>
+          here #big is ID selector.<br><br>
+       <li> Grouping Selector </li><br>
+           <u> EXAMPLE</u>:<br><br>
+          <span> p,div {
+                 font-size:25px;
+                }
+          </span><br><br>
+         <p class="big"> here p,div are different elements selectors,there                     grouping gives grouping selectors.</p><br><br><br><br><br><br>
+       <li><em> Combining Selector </em></li><br>
+         <ol>
+           <li> Element With Class Selector </li><br>
+              <u> EXAMPLE</u>:<br>
+             <p class="yellow"> p.big {
+                 font-size:15px;
+                }
+          </p><br><br><br><br><br><br><br><br><br><br><br><br>
+          here p is element selector and .big is class selector there combination                       gives elent with class selector. <br><br>
+           <li> Child Selector </li><br>
+             <u> EXAMPLE</u>:<br>
+       <div>
+             <span> article>p {
+                 font-size:25px;
+                }
+          </span><br>
+       </div><br><br>
+          here p is element selector and article is a tag there combination                       gives child selector. <br>
+          <em> <u> It tells p is direct child of article.which means the property     satisfies for only p which is direct child of article. </u></em><br><br>
+           <li> Descendent Selector </li><br>
+             <u> EXAMPLE</u>:<br>
+         <div>
+             <span> article p {
+                 font-size:25px;
+                }
+          </span>
+         </div><br><br>
+          here p is element selector and article is a tag there combination                       gives descendent selector. <br>
+          <em> <u> It tells p is child of an article.which means the property     satisfies for all p which is child of article. </u></em><br><br>
+         </ol>
+     <li> Not Limited Element Selector </li><br>
+             <u> EXAMPLE</u>:<br>
+            <span class="purple"> .big p {
+                 font-size:25px;
+                } 
+          </span><br><br>
+          here p is element selector and .big is a class selector there combination gives not limited to element selector. <br>
+          <em> <u> It tells p with class big.which means the property     satisfies for only p with class big(p class="big"). </u></em><br><br>
+             <u> EXAMPLE 2</u>:<br>
+        <article>
+             <p class="purple"> article>.big {
+                 font-size:25px;
+                }
+          </p>
+        </article><br><br><br><br><br>
+          here .big is class selector and article is a tag there combination                       gives not limited to element selector. <br>
+          <em> <u> It tells .big is direct child of article.which means the property satisfies for only .big which is direct child of article. </u></em><br><br>
+     <li><em> Pseudo Class Selector </em></li>
+          <ol> 
+             <li> :link </li>
+             <li> :visited </li>
+             <li> :hover </li>
+             <li> :active </li>
+             <li> :nth-child </li>
+          </ol>
+     </ul>
+     <h5 style="text-align:center;"> Style Placements </h5>
+       <div>
+         <ul>
+             <li>Inline styling </li><br>
+             <u> EXAMPLE</u>:<br>
+             p style="font-size:5px;"<br>
+       <u> It is Inline styling. It should write on body tag.It does not need style tags.</u><br><br>
+             <li>Internal styling </li><br>
+             <u> EXAMPLE</u>:<br>
+             p { 
+                style=font-size:5px;
+                } <br>
+       <u> It is Internal  styling. It should write on head tag.It need style tags.</u></em><br><br>
+             <li>External styling </li><br>
+             <u> EXAMPLE</u>:<br>
+             p {
+              style=font-size:5px;
+               } <br>
+       <u> It is External styling. It should write on head tag.It doesnot need style tags. It need refferal(link) or path of that stylesheet.<br><strong> FOR EXAMPLE </strong><br> link rel="stylesheet" href="styles.css"</u></em><br><br>
+         </ul>
+       </div>
+      <h5 style="text-align:center;"> Conflict Resolutions </h5>
+        <span> There are four topics involved in conflict resolutions: </span>
+     <span>
+     <ul>
+       <li><a href="#Origin"> Origin </a></li>
+       <li><a href="#Merge"> Merge </a></li>
+       <li><a href="#Inheritance"> Inheritance </a></li>
+       <li><a href="#Specificity"> Specificity </a></li>
+     </ul> 
+    </span>
+    <span><strong><a id="Origin"></a> Origin </strong></span>
+    <div> Last declaration wins. </div>
+    <span><strong><a id="Merge"></a> Merge </strong></span>
+    <div> If there are no conflicts declerations merge into one rule. </div>
+    <span><strong><a id="Inheritance"></a> Inheritance </strong></span>
+    <div> It follows DOM tree </div>
+    <span> DOM stands for Document Object Model. </span>
+    <span><strong><a id="Specificity"></a> Specificity </strong> </span>
+    <div> Most specific combination wins. </div>
+      <span> It contains 4 types </span>
+      <span>  1)style <br> 2)ID <br> 3)class,pseudo-class <br> 4)# of elements </span>
+   <h4 style="text-align:center;"> Styling Text </h4>
+    <span> styling text font size may be in two            ways:<br><em>1)em</em><br><em>2)px</em> </span>
+    <h3 style="text-align:center;"> Box Model </h3>
+     <div id="box">
+       <div id="content">  Box Model explains about          <br><u>1)padding</u><br><u>2)conent</u><br><u>3)border</u><br><u>4)margin</u>  
+</div>
+     </div>
+    <span> It explains about star(*) selector. </span>
+   <h3 style="text-align:center;"> Background-property </h3>
+   <h2 style="text-align:center;"> Positioning Elements </h2>
+    <span> positioning of elements by Floating, Relative and Absolute positioning </span>
+  <h3 style="text-align:center;"> Media Queries </h3>
+  <h3 style="text-align:center;"> Responsive Design </h3><br><br><br>
+       <h1 style="text-align:center;"> PRACTICAL APPROACH TO CSS </h1>
+  <span style="text-align:center;" <strong><em><u><strike> now starting color to overall page.</strike></u></em></strong> </span>
+         <h3 style="text-align:center;"> Floating Elements </h3>
+    <div>
+     <p id="p1"> </p>
+     <p id="p2"> </p>
+     <p id="p3"> </p>
+     <p id="p4"> </p>
+          <footer> 
+Iam shanmukha.Iam currently pursuing B-tech first year at Anil Neerukonda Institute of technology and sciences in Information Technology department.
+       </footer>
+    </div>
+
+</body>
+</htm  
